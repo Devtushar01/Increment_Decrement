@@ -16,3 +16,10 @@ const decrement = ()  => {
     //set the value on the UI
     countValue.innerHTML = value;
 };
+const reset = () =>{
+    let val = parseInt(countValue.innerHTML);
+    countValue.innerHTML = val;
+    val = val -val;
+    countValue.innerHTML = val;
+
+}
